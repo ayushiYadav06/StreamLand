@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
-import "./videosSection.scss";
+import "./VideosSection.scss";
 
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 
-import { PlayIcon } from "../playBtn";
+import { PlayIcon } from "../PlayBtn";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
 import Img from "../../../components/lazyLoadImage/Img";
 
-const videosSection = ({ data, loading }) => {
+const VideosSection = ({ data, loading }) => {
     const [show, setShow] = useState(false);
     const [videoId, setVideoId] = useState(null);
 
@@ -68,4 +68,4 @@ const videosSection = ({ data, loading }) => {
     );
 };
 
-export default videosSection;
+export default VideosSection;

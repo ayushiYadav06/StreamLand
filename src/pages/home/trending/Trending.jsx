@@ -2,10 +2,10 @@
 import React, { useState } from 'react' 
 
 import SwitchTabs from '../../../components/switchTabs/SwitchTabs'
-import ContentWrapper from '../../../components/contentWrapper/contentWrapper'
-import useFetch from '../../../hooks/useFetch'
+import ContentWrapper from '../../../components/contentWrapper/ContentWrapper'
+import useFetch from '../../../hooks/UseFetch'
 
-import Carosuel from '../../../components/carosuel/carosuel'
+import Carosuel from '../../../components/carosuel/Carosuel'
 
 const Trending = () => {
 

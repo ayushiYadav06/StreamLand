@@ -4,12 +4,12 @@
 import React, { useState } from "react";
 
 import SwitchTabs from "../../../components/switchTabs/SwitchTabs";
-import ContentWrapper from "../../../components/contentWrapper/contentWrapper";
-import useFetch from "../../../hooks/useFetch";
+import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
+import useFetch from "../../../hooks/UseFetch";
 
-import Carosuel from "../../../components/carosuel/carosuel";
+import Carosuel from "../../../components/carosuel/Carosuel";
 
-const topRated = () => {
+const TopRated = () => {
   const [endPoint, SetEndPoint] = useState("movie");
   const { data, loading } = useFetch(`/${endPoint}/top_rated`);
   const onTabChange = (tab) => {
@@ -28,4 +28,4 @@ const topRated = () => {
   );
 };
 
-export default topRated;
+export default TopRated;

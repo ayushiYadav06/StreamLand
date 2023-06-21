@@ -2,17 +2,17 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import{ useEffect } from "react";
 
-import './heroBanner.scss'
+import './HeroBanner.scss'
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import useFetch from "../../../hooks/useFetch";
+import useFetch from "../../../hooks/UseFetch";
 
-import Img from "../../../components/lazyLoadImage/img";
-import ContentWrapper from "../../../components/contentWrapper/contentWrapper";
+import Img from "../../../components/lazyLoadImage/Img";
+import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 
-const heroBanner = () => {
+const HeroBanner = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [background, setBackground] = useState("");
   const [query, setQuery] = useState("");
@@ -70,4 +70,4 @@ const heroBanner = () => {
   );
 };
 
-export default heroBanner;
+export default HeroBanner;

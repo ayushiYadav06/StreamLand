@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import './home.scss'
+import './Home.scss'
 
-import HeroBanner from './heroBanner/heroBanner'
+import HeroBanner from './heroBanner/HeroBanner'
 import Trending from './trending/Trending'
-import Popular from './popular/popular'
-import TopRated from './topRated/topRated'
+import Popular from './popular/Popular'
+import TopRated from './topRated/TopRated'
 
-const home = () => {
+const Home = () => {
   return (
     <div>
        <HeroBanner />
@@ -18,4 +18,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home

@@ -1,9 +1,9 @@
 // import React from "react";
 import ReactPlayer from "react-player/youtube";
 
-import "./videoPopup.scss";
+import "./VideoPopup.scss";
 
-const videoPopup = ({ show, setShow, videoId, setVideoId }) => {
+const VideoPopup = ({ show, setShow, videoId, setVideoId }) => {
     const hidePopup = () => {
         setShow(false);
         setVideoId(null);
@@ -27,4 +27,4 @@ const videoPopup = ({ show, setShow, videoId, setVideoId }) => {
     );
 };
 
-export default videoPopup;
+export default VideoPopup;

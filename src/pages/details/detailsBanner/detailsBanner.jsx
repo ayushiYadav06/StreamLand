@@ -5,20 +5,20 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
 
-import "./detailsBanner.scss";
+import "./DetailsBanner.scss";
 
-import { PlayIcon } from "../playBtn";
+import { PlayIcon } from "../PlayBtn";
 
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
-import useFetch from "../../../hooks/useFetch";
+import useFetch from "../../../hooks/UseFetch";
 import Genres from "../../../components/genres/Genres";
 import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadImage/Img.jsx";
 import PosterFallback from "../../../assets/no-poster.png";
 
-import VedioPopup from '../../../components/videoPopup/videoPopup'
+import VedioPopup from '../../../components/videoPopup/VideoPopup'
 
-const detailsBanner = ({ video, crew }) => {
+const DetailsBanner = ({ video, crew }) => {
 
   const [show , setShow] = useState(false)
   const [videoId , setVideoId] = useState(null)
@@ -202,4 +202,4 @@ const detailsBanner = ({ video, crew }) => {
   );
 };
 
-export default detailsBanner;
+export default DetailsBanner;

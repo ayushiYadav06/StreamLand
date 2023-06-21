@@ -2,21 +2,21 @@ import { useEffect } from "react";
 
 import { BrowserRouter , Routes , Route } from "react-router-dom";
 
-import { fetchDataFromApi } from "./utils/api";
+import { fetchDataFromApi } from "./utils/Api";
 
-import { getApiConfiguration  } from "./store/homeSlice";
-import { getGenre } from './store/homeSlice'
+import { getApiConfiguration  } from "./store/HomeSlice";
+import { getGenre } from './store/HomeSlice'
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 
-import Header from './components/header/header'
-import Footer from './components/Footer/footer'
+import Header from './components/header/Header'
+import Footer from './components/Footer/Footer'
 
-import Home from "./pages/home/home";
-import Details from './pages/details/details'
-import Explore from './pages/explore/explore'
-import SearchResults from './pages/searchResults/searchResults'
-import PageNotFound from './pages/404/pageNotFound'
+import Home from "./pages/home/Home";
+import Details from './pages/details/Details'
+import Explore from './pages/explore/Explore'
+import SearchResults from './pages/searchResults/SearchResults'
+import PageNotFound from './pages/404/PageNotFound'
 
 
 function App() {

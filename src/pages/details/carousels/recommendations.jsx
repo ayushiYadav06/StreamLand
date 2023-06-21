@@ -1,9 +1,9 @@
 import React from "react";
 
-import Carousel from "../../../components/carosuel/carosuel";
-import useFetch from "../../../hooks/useFetch";
+import Carousel from "../../../components/carosuel/Carosuel";
+import useFetch from "../../../hooks/UseFetch";
 
-const recommendations = ({ mediaType, id }) => {
+const Recommendations = ({ mediaType, id }) => {
     const { data, loading, error } = useFetch(
         `/${mediaType}/${id}/recommendations`
     );
@@ -18,4 +18,4 @@ const recommendations = ({ mediaType, id }) => {
     );
 };
 
-export default recommendations;
+export default Recommendations;

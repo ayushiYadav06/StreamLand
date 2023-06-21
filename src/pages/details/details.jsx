@@ -1,14 +1,14 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import './details.scss'
+import './Details.scss'
 import { useParams } from 'react-router-dom'
-import useFetch from '../../hooks/useFetch'
-import DetailsBanner from './detailsBanner/detailsBanner'
-import Cast from './cast/cast'
-import VideosSection from './videosSection/videosSection'
-import Similar from './carousels/similar'
-import Recommendations from './carousels/recommendations'
+import useFetch from '../../hooks/UseFetch'
+import DetailsBanner from './detailsBanner/DetailsBanner'
+import Cast from './cast/Cast'
+import VideosSection from './videosSection/VideosSection'
+import Similar from './carousels/Similar'
+import Recommendations from './carousels/Recommendations'
 
 const details = () => {
 

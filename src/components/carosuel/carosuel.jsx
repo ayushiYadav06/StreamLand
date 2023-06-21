@@ -12,13 +12,13 @@ import dayjs from "dayjs";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import Img from "../lazyLoadImage/Img";
 import PosterFallback from "../../assets/no-poster.png";
-import CircleRating from "../circleRating/circleRating";
+import CircleRating from "../circleRating/CircleRating";
 
-import Genres from '../genres/genres'
+import Genres from '../genres/Genres'
 
 
-import "./style.scss";
-const carosuel = ({ data, loading , endPoint , title }) => {
+import "./Style.scss";
+const Carosuel = ({ data, loading , endPoint , title }) => {
   const carouselContainer = useRef();
   const { url } = useSelector((state) => state.home);
   const navigate = useNavigate();
@@ -119,4 +119,4 @@ const skItem = () =>{
   );
 };
 
-export default carosuel;
+export default Carosuel;

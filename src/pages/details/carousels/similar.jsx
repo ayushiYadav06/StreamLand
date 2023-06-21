@@ -1,9 +1,9 @@
 import React from "react";
 
-import Carousel from "../../../components/carosuel/carosuel";
-import useFetch from "../../../hooks/useFetch";
+import Carousel from "../../../components/carosuel/Carosuel";
+import useFetch from "../../../hooks/UseFetch";
 
-const similar = ({ mediaType, id }) => {
+const Similar = ({ mediaType, id }) => {
     const { data, loading, error } = useFetch(`/${mediaType}/${id}/similar`);
 
     const title = mediaType === "tv" ? "Similar TV Shows" : "Similar Movies";
@@ -18,4 +18,4 @@ const similar = ({ mediaType, id }) => {
     );
 };
 
-export default similar;
+export default Similar;

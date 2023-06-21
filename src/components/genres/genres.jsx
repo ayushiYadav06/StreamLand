@@ -1,9 +1,9 @@
 import React from 'react'
 
-import './genres.scss'
+import './Genres.scss'
 import { useSelector } from 'react-redux'
 
-const genres = ({data}) => {
+const Genres = ({data}) => {
 
   const { genres } = useSelector((state) => state.home);
  
@@ -20,4 +20,4 @@ const genres = ({data}) => {
   )
 }
 
-export default genres
+export default Genres

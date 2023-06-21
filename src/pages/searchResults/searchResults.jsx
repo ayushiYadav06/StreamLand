@@ -1,18 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
-import "./searchResults.scss";
+import "./SearchResults.scss";
 
-import Spinner from "../../components/spinner/spineer";
+import Spinner from "../../components/spinner/Spineer";
 
 import { useParams } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-import { fetchDataFromApi } from "../../utils/api";
-import ContentWrapper from "../../components/contentWrapper/contentWrapper";
-import MovieCard from '../../components/movieCard/movieCard'
+import { fetchDataFromApi } from "../../utils/Api";
+import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
+import MovieCard from '../../components/movieCard/MovieCard'
 import noResults from "../../assets/no-results.png";
 
-const searchResults = () => {
+const SearchResults = () => {
   const [data, setData] = useState(null);
   const [pageNum, setPageNum] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -92,4 +92,4 @@ const searchResults = () => {
 
 };
 
-export default searchResults;
+export default SearchResults;
